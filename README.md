@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/DeepGrocer.png" alt="DeepGrocer" width="320">
+  <img src="DeepGrocer.png" alt="DeepGrocer" width="320">
 </p>
 
 **In a nutshell:** DeepGrocer is an agentic retail ops platform that senses store signals, forecasts demand, automates replenishment, optimizes planograms/labor/pricing, orchestrates pick-pack/substitutions/last-mile/checkout, manages recalls/shrink/energy, and writes signed, policy-backed receipts.
