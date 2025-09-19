@@ -2,7 +2,7 @@
   <img src="DeepGrocer.png" alt="DeepGrocer" width="320">
 </p>
 
-**In a nutshell:** DeepGrocer is an agentic retail ops platform that senses store signals, forecasts demand, automates replenishment, optimizes planograms/labor/pricing, orchestrates pick-pack/substitutions/last-mile/checkout, manages recalls/shrink/energy, and writes signed, policy-backed receipts.
+**In a nutshell:** DeepGrocer is an agentic retail ops platform that senses store signals, forecasts demand, automates replenishment, optimizes planograms/labor/pricing, orchestrates pick-pack/substitutions/last-mile/checkout, manages recMalls/shrink/energy, and writes signed, policy-backed receipts.
 
 ---
 
@@ -25,7 +25,7 @@ DeepGrocer is a **control plane** for grocery operations. It connects cameras, P
 
 ---
 
-## Most likely user stories 
+## User stories 
 
 1. **Store Manager:**
    *As a store manager, I want real-time tasks for stocking, markdowns, and queues so the team focuses on the next most valuable action, and I can prove every change with receipts.*
