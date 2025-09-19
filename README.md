@@ -10,7 +10,7 @@ DeepGrocer is a **control plane** for grocery operations. It connects cameras, P
 
 ---
 
-## The 4 main use cases
+## Use Cases
 
 | Use case                                     | What it does                                                                                                           | Outcomes (typical)                                                                   |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
@@ -23,7 +23,7 @@ DeepGrocer is a **control plane** for grocery operations. It connects cameras, P
 
 ---
 
-## Most likely user stories (4 personas)
+## Most likely user stories 
 
 1. **Store Manager:**
    *As a store manager, I want real-time tasks for stocking, markdowns, and queues so the team focuses on the next most valuable action, and I can prove every change with receipts.*
