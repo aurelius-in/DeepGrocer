@@ -42,18 +42,19 @@ DeepGrocer is a **control plane** for grocery operations. It connects cameras, P
 ## System flow (end-to-end)
 
 ```mermaid
+
 flowchart LR
   subgraph Signals
-    POS[POS & Payments]
-    Cams[Cameras & Shelf Sensors]
-    IoT[Scales & IoT (temp, energy)]
-    Ecom[E-com Orders & Sessions]
-    Supply[ASNs, DC, Transport]
+    POS[POS and Payments]
+    Cams[Cameras and Shelf Sensors]
+    IoT[Scales and IoT Temp Energy]
+    Ecom[Ecom Orders and Sessions]
+    Supply[ASNs DC Transport]
   end
 
   subgraph ControlPlane[DeepGrocer Control Plane]
-    Policy[Policy-as-Code & Risk Tiers]
-    FS[Feature/Memory Store]
+    Policy[Policy as Code and Risk Tiers]
+    FS[Feature and Memory Store]
     Orchestrator[Agent Orchestrator]
     Receipts[Signed Audit Receipts]
   end
@@ -63,21 +64,21 @@ flowchart LR
     TaskRouter[Task Router]
     QueueFlow[QueueFlow]
     Replen[MPC Replenisher]
-    PricePulse[Price & Markdown]
+    PricePulse[Price and Markdown]
     PickPack[Pick-Pack Coach]
     SubGen[Substitution Genius]
     Router[Last-Mile Router]
     ColdGuard[Cold-Chain Guard]
-    Recall[Recall & Trace]
+    Recall[Recall and Trace]
     Energy[Energy Optimizer]
     Vendor[Vendor Scorecards]
   end
 
   subgraph Actuators[Actuation Targets]
     Handhelds[Handheld Tasks]
-    Labels[ESL / Labels / POS]
-    WMS[WMS / TMS]
-    Comms[Staff & Customer Comms]
+    Labels[ESL Labels POS]
+    WMS[WMS and TMS]
+    Comms[Staff and Customer Comms]
   end
 
   Signals --> ControlPlane
@@ -88,6 +89,7 @@ flowchart LR
   Agents --> Receipts
   Receipts --> FS
   FS --> Agents
+
 ```
 
 **How to read it:** Signals stream into the **Control Plane**. The **Orchestrator** activates agents within policy and risk limits. Agents act on store systems and people, emit **receipts**, and learn from outcomes via the memory store.
