@@ -1,0 +1,17 @@
+﻿app:
+  name: DeepGrocer
+  env: 
+  log_level: 
+stores:
+  postgres:
+    dsn: postgresql+psycopg://dg:dgpass@postgres:5432/deepgrocer
+  redis:
+    host: 
+    port: 
+  kafka:
+    broker: 
+  minio:
+    endpoint: 
+    bucket: 
+policy:
+  risk_tier: low
