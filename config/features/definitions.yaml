@@ -1,0 +1,13 @@
+features:
+  - name: traffic_signal
+    spec:
+      description: Rolling traffic intensity sampled every 1m
+      schema:
+        type: integer
+        unit: index
+  - name: oos_events
+    spec:
+      description: ShelfVision out-of-stock events
+      schema:
+        type: object
+

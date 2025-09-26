@@ -1,0 +1,9 @@
+﻿version: "0.1"
+risk: "low"
+bounds:
+  open_lanes:
+    min: 0
+    max: 4
+  tasks:
+    min: 0
+    max: 200

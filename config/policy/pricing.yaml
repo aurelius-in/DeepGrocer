@@ -1,0 +1,6 @@
+﻿version: "0.1"
+risk: "low"
+bounds:
+  markdown_pct:
+    min: 0
+    max: 30
