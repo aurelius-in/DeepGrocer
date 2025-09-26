@@ -1,0 +1,14 @@
+﻿CREATE TABLE IF NOT EXISTS features (
+  id SERIAL PRIMARY KEY,
+  name TEXT UNIQUE NOT NULL,
+  spec JSONB NOT NULL,
+  created_at TIMESTAMP DEFAULT now()
+);
+
+CREATE TABLE IF NOT EXISTS policies (
+  id SERIAL PRIMARY KEY,
+  name TEXT UNIQUE NOT NULL,
+  version TEXT NOT NULL,
+  spec JSONB NOT NULL,
+  created_at TIMESTAMP DEFAULT now()
+);

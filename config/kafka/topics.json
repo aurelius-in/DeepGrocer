@@ -1,0 +1,9 @@
+{
+  "topics": [
+    { "name": "dg.tasks", "partitions": 1, "replication_factor": 1 },
+    { "name": "dg.receipts", "partitions": 1, "replication_factor": 1 },
+    { "name": "dg.signals.queue", "partitions": 1, "replication_factor": 1 },
+    { "name": "dg.signals.shelf", "partitions": 1, "replication_factor": 1 }
+  ]
+}
+
