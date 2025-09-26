@@ -49,7 +49,10 @@ DeepGrocer is a **control plane** for grocery operations. It connects cameras, P
 ## System flow (end to end)
 
 ```mermaid
-flowchart LR
+%%{init: {'flowchart': {'curve': 'linear', 'nodeSpacing': 40, 'rankSpacing': 70}} }%%
+flowchart TD
+  %% Lanes stacked vertically: Signals -> Control Plane -> Agents -> Actuators
+
   subgraph Signals
     POS[POS and Payments]
     Cams[Cameras and Shelf Sensors]
@@ -87,6 +90,7 @@ flowchart LR
     Comms[Staff and Customer Comms]
   end
 
+  %% Vertical flow
   Signals --> ControlPlane
   ControlPlane --> Agents
   Agents --> Policy
@@ -148,13 +152,14 @@ cd deepgrocer
 # 2) run services (dev compose includes Kafka, Postgres, MinIO, UI)
 make up
 
-# 3) seed synthetic data
+# 3) init DB tables
+make db
+
+# 4) optional: seed synthetic data
 make seed
 
-# 4) start a subset of agents
-make agents shelfvision task-router queueflow mpc price-pulse
-
-# 5) open the UI
+# 5) visit API and UI
+open http://localhost:8000
 open http://localhost:3000
 ```
 
