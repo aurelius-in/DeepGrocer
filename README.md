@@ -1,7 +1,3 @@
-Here’s an updated **README.md** you can paste over your current one. I kept your voice and structure, and added the high-signal Vertex AI and Azure ML sections, CI/CD, governance, and observability. I also included badges, deploy commands, and placeholders for screenshots. No use of the word “demo.”
-
----
-
 <p align="center">
   <img src="DeepGrocer.png" alt="DeepGrocer" width="320">
 </p>
